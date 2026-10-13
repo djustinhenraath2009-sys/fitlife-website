@@ -1,0 +1,352 @@
+/* =========================
+ALGEMENE INSTELLINGEN
+========================= */
+
+{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+html {
+scroll-behavior: smooth;
+}
+
+body {
+font-family: Arial, sans-serif;
+background-color: #0d1117;
+color: #ffffff;
+line-height: 1.6;
+}
+
+a {
+text-decoration: none;
+color: inherit;
+}
+
+/* =========================
+NAVIGATIE
+========================= */
+
+header {
+background-color: #111820;
+border-bottom: 1px solid #27313b;
+}
+
+.navbar {
+max-width: 1200px;
+margin: auto;
+min-height: 75px;
+
+display: flex;
+align-items: center;
+justify-content: space-between;
+
+padding: 0 25px;
+
+}
+
+.logo {
+font-size: 25px;
+font-weight: bold;
+letter-spacing: 1px;
+}
+
+.logo span,
+.footer-content span {
+color: #39d98a;
+}
+
+.nav-links {
+list-style: none;
+
+display: flex;
+align-items: center;
+gap: 25px;
+
+}
+
+.nav-links a {
+color: #d9e1e8;
+font-size: 14px;
+transition: 0.3s;
+}
+
+.nav-links a,
+.nav-links a.active {
+color: #39d98a;
+}
+
+/* =========================
+HERO
+========================= */
+
+.hero {
+min-height: 650px;
+
+display: flex;
+align-items: center;
+
+background:
+    linear-gradient(
+        90deg,
+        rgba(13, 17, 23, 0.98),
+        rgba(13, 17, 23, 0.75),
+        rgba(13, 17, 23, 0.35)
+    ),
+    url("../afbeeldingen/fitness.jpg");
+
+background-size: cover;
+background-position: center;
+
+}
+
+.hero-content {
+max-width: 1200px;
+width: 100%;
+margin: auto;
+padding: 80px 25px;
+}
+
+.small-title {
+color: #39d98a;
+font-size: 13px;
+font-weight: bold;
+letter-spacing: 2px;
+margin-bottom: 15px;
+}
+
+.hero h1 {
+font-size: clamp(45px, 7vw, 80px);
+line-height: 1.05;
+margin-bottom: 25px;
+}
+
+.hero h1 span {
+color: #39d98a;
+}
+
+.hero p(.small-title) {
+max-width: 600px;
+color: #c6d0d9;
+font-size: 18px;
+margin-bottom: 30px;
+}
+
+/* =========================
+KNOPPEN
+========================= */
+
+.hero-buttons {
+display: flex;
+gap: 15px;
+flex-wrap: wrap;
+}
+
+.button {
+display: inline-block;
+padding: 13px 23px;
+border-radius: 6px;
+font-weight: bold;
+transition: 0.3s;
+}
+
+.button.primary {
+background-color: #39d98a;
+color: #08100c;
+}
+
+.button.primary {
+transform: translateY(-3px);
+}
+
+.button.secondary {
+border: 1px solid #596572;
+color: #ffffff;
+}
+
+.button.secondary {
+border-color: #39d98a;
+color: #39d98a;
+}
+
+/* =========================
+SECTIES
+========================= */
+
+.section {
+max-width: 1200px;
+margin: auto;
+padding: 90px 25px;
+}
+
+.section-heading {
+max-width: 750px;
+}
+
+.section-heading.center {
+margin: auto;
+text-align: center;
+}
+
+.section-heading h2,
+.health-content h2 {
+font-size: 40px;
+line-height: 1.2;
+margin-bottom: 20px;
+}
+
+.section-heading > p(.small-title),
+.health-content > p(.small-title) {
+color: #aeb9c4;
+}
+
+/* =========================
+KAARTEN
+========================= */
+
+.cards {
+margin-top: 50px;
+
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 25px;
+
+}
+
+.card {
+background-color: #151c24;
+border: 1px solid #27313b;
+border-radius: 12px;
+padding: 30px;
+
+transition: 0.3s;
+
+}
+
+.card {
+transform: translateY(-7px);
+border-color: #39d98a;
+}
+
+.card-icon {
+font-size: 35px;
+margin-bottom: 20px;
+}
+
+.card h3 {
+font-size: 24px;
+margin-bottom: 12px;
+}
+
+.card p {
+color: #aeb9c4;
+margin-bottom: 20px;
+}
+
+.card a {
+color: #39d98a;
+font-weight: bold;
+}
+
+/* =========================
+GEZONDHEID
+========================= */
+
+.health-section {
+background-color: #151c24;
+padding: 90px 25px;
+}
+
+.health-content {
+max-width: 1200px;
+margin: auto;
+}
+
+.health-content > p(.small-title) {
+max-width: 650px;
+margin-bottom: 30px;
+}
+
+/* =========================
+FOOTER
+========================= */
+
+footer {
+background-color: #090d12;
+padding: 60px 25px 20px;
+}
+
+.footer-content {
+max-width: 1200px;
+margin: auto;
+
+display: grid;
+grid-template-columns: 2fr 1fr 1fr;
+gap: 50px;
+
+}
+
+.footer-content h3 {
+font-size: 24px;
+margin-bottom: 15px;
+}
+
+.footer-content h4 {
+margin-bottom: 15px;
+}
+
+.footer-content p {
+color: #8e9aa6;
+max-width: 350px;
+}
+
+.footer-content a {
+display: block;
+color: #8e9aa6;
+margin-bottom: 8px;
+}
+
+.footer-content a {
+color: #39d98a;
+}
+
+.copyright {
+max-width: 1200px;
+margin: 50px auto 0;
+padding-top: 20px;
+
+border-top: 1px solid #27313b;
+
+color: #687581;
+font-size: 13px;
+
+}
+
+/* =========================
+MOBIELE VERSIE
+========================= */
+
+@media (max-width: 900px) {
+
+.navbar {
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+
+.nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.cards {
+    grid-template-columns: 1fr;
+}
+
+.footer-content {
+    grid-template-columns: 1fr;
+}
+
+}
